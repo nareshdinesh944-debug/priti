@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comfi Shoes – Walk Bold. Walk Comfi. Premium sneakers that blend ultra comfort with bold street style." />
+  <title>Comfi Shoes | Walk Bold. Walk Comfi.</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        COMFI<span>.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#newsletter" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content" data-animate="fade-up">
+      <span class="hero-badge">NEW COLLECTION 2026</span>
+      <h1 class="hero-title">
+        Comfort<br /><span class="accent">Meets</span> Power
+      </h1>
+      <p class="hero-tagline">Walk Bold. Walk Comfi.</p>
+      <p class="hero-sub">Engineered for the streets. Built for champions.<br />Premium footwear that moves as boldly as you do.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="heroShopBtn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+          Shop Now <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="btn btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+          Our Story
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Styles</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-image-wrap" data-animate="fade-left">
+      <div class="hero-glow"></div>
+      <img src="hero_sneaker.png" alt="Comfi Shoes Premium Sneaker" class="hero-shoe-img" id="heroShoe" />
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text" data-animate="fade-right">
+          <span class="section-badge">Our Story</span>
+          <h2 class="section-title">Born from Passion.<br />Built for <span class="accent">Champions.</span></h2>
+          <p class="about-desc">COMFI Shoes was founded with one belief — you should never have to choose between comfort and style. We refused to accept that premium design meant sacrificing how your feet feel at the end of the day.</p>
+          <p class="about-desc">Our team of designers and engineers obsess over every millimeter — from the ergonomic arch support to the grip pattern on our soles — to deliver footwear that performs as boldly as it looks.</p>
+          <div class="mission-box">
+            <i class="fas fa-bullseye"></i>
+            <div>
+              <h4>Our Mission</h4>
+              <p>To redefine street footwear by fusing ultra-comfort technology with aggressive modern design — for those who refuse to compromise.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-animate="fade-left">
+          <div class="about-card about-card--1">
+            <i class="fas fa-medal"></i>
+            <h3>Premium Quality</h3>
+          </div>
+          <div class="about-card about-card--2">
+            <i class="fas fa-bolt"></i>
+            <h3>Bold Design</h3>
+          </div>
+          <div class="about-card about-card--3">
+            <i class="fas fa-heart"></i>
+            <h3>Crafted with Care</h3>
+          </div>
+          <div class="about-img-bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS SECTION ===================== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Collection</span>
+        <h2 class="section-title">Shop the <span class="accent">Lineup</span></h2>
+        <p class="section-sub">Premium kicks crafted for every stride.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product Card 1 -->
+        <div class="product-card" data-animate="fade-up">
+          <div class="product-img-wrap">
+            <img src="shoe_products.png" alt="Comfi X1 Pro" class="product-img" />
+            <div class="product-overlay">
+              <button class="btn btn-primary btn-sm" id="buyX1">Quick Buy</button>
+            </div>
+            <span class="product-tag">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">COMFI X1 Pro</h3>
+            <p class="product-desc">Lightweight street runner with memory foam insole.</p>
+            <div class="product-footer">
+              <span class="product-price">₹4,999</span>
+              <button class="btn btn-outline btn-sm" id="buyBtnX1">Buy Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card" data-animate="fade-up" style="--delay:0.15s">
+          <div class="product-img-wrap">
+            <img src="shoe_products.png" alt="Comfi Shadow Elite" class="product-img" style="filter: invert(1) brightness(0.9);" />
+            <div class="product-overlay">
+              <button class="btn btn-primary btn-sm" id="buyShadow">Quick Buy</button>
+            </div>
+            <span class="product-tag new-tag">New</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">COMFI Shadow Elite</h3>
+            <p class="product-desc">Dark edition with ultra-grip sole technology.</p>
+            <div class="product-footer">
+              <span class="product-price">₹6,499</span>
+              <button class="btn btn-outline btn-sm" id="buyBtnShadow">Buy Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card" data-animate="fade-up" style="--delay:0.3s">
+          <div class="product-img-wrap">
+            <img src="hero_sneaker.png" alt="Comfi Force Max" class="product-img" />
+            <div class="product-overlay">
+              <button class="btn btn-primary btn-sm" id="buyForce">Quick Buy</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">COMFI Force Max</h3>
+            <p class="product-desc">Maximum cushioning for all-day wear on any terrain.</p>
+            <div class="product-footer">
+              <span class="product-price">₹5,799</span>
+              <button class="btn btn-outline btn-sm" id="buyBtnForce">Buy Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card" data-animate="fade-up" style="--delay:0.1s">
+          <div class="product-img-wrap">
+            <img src="shoe_products.png" alt="Comfi Void Runner" class="product-img" style="transform: scaleX(-1);" />
+            <div class="product-overlay">
+              <button class="btn btn-primary btn-sm" id="buyVoid">Quick Buy</button>
+            </div>
+            <span class="product-tag" style="background:#fff;color:#000;">Limited</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">COMFI Void Runner</h3>
+            <p class="product-desc">Racing-inspired silhouette with breathable mesh upper.</p>
+            <div class="product-footer">
+              <span class="product-price">₹7,299</span>
+              <button class="btn btn-outline btn-sm" id="buyBtnVoid">Buy Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card" data-animate="fade-up" style="--delay:0.25s">
+          <div class="product-img-wrap">
+            <img src="hero_sneaker.png" alt="Comfi Stealth Low" class="product-img" style="filter:brightness(1.2);" />
+            <div class="product-overlay">
+              <button class="btn btn-primary btn-sm" id="buyStealth">Quick Buy</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">COMFI Stealth Low</h3>
+            <p class="product-desc">Slim profile low-top with cloud-soft padding.</p>
+            <div class="product-footer">
+              <span class="product-price">₹3,999</span>
+              <button class="btn btn-outline btn-sm" id="buyBtnStealth">Buy Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card" data-animate="fade-up" style="--delay:0.4s">
+          <div class="product-img-wrap">
+            <img src="shoe_products.png" alt="Comfi Phantom High" class="product-img" style="filter: contrast(1.2) brightness(0.85);" />
+            <div class="product-overlay">
+              <button class="btn btn-primary btn-sm" id="buyPhantom">Quick Buy</button>
+            </div>
+            <span class="product-tag new-tag">New</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">COMFI Phantom High</h3>
+            <p class="product-desc">High-top silhouette with ankle support and bold sole.</p>
+            <div class="product-footer">
+              <span class="product-price">₹8,499</span>
+              <button class="btn btn-outline btn-sm" id="buyBtnPhantom">Buy Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="why-us" id="why-us">
+    <div class="why-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Advantage</span>
+        <h2 class="section-title">Why <span class="accent">COMFI?</span></h2>
+        <p class="section-sub">We don't just make shoes. We engineer experiences.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-animate="fade-up">
+          <div class="why-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Ultra Comfort Technology</h3>
+          <p>Our proprietary CloudStep™ insole system adapts to your foot shape for zero-fatigue wear from dawn to dusk.</p>
+        </div>
+        <div class="why-card" data-animate="fade-up" style="--delay:0.1s">
+          <div class="why-icon"><i class="fas fa-gem"></i></div>
+          <h3>Premium Materials</h3>
+          <p>We source only the finest full-grain leather, reinforced mesh, and aerospace-grade rubber soles for unmatched durability.</p>
+        </div>
+        <div class="why-card" data-animate="fade-up" style="--delay:0.2s">
+          <div class="why-icon"><i class="fas fa-fire"></i></div>
+          <h3>Modern Street Style</h3>
+          <p>Designed by street culture enthusiasts who understand the pulse of today's bold, aggressive urban fashion scene.</p>
+        </div>
+        <div class="why-card" data-animate="fade-up" style="--delay:0.3s">
+          <div class="why-icon"><i class="fas fa-feather-alt"></i></div>
+          <h3>Lightweight & Durable</h3>
+          <p>Advanced foam compounds reduce shoe weight by 40% versus traditional soles without sacrificing a single ounce of durability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Reviews</span>
+        <h2 class="section-title">What People <span class="accent">Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="review-card" data-animate="fade-up">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"I've worn luxury sneakers my whole life but COMFI X1 Pro completely changed the game. The cushioning is unreal — I wore them for 10 hours straight and my feet felt fresh. Design is absolutely fire."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AK</div>
+            <div>
+              <h4>Arjun Kapoor</h4>
+              <span>Verified Buyer · Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card featured-review" data-animate="fade-up" style="--delay:0.15s">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"COMFI Shadow Elite is the best purchase I've made this year. The all-black aesthetic is exactly the bold and clean look I wanted. Got compliments literally every single day. Premium quality at a fair price — 10/10."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">PR</div>
+            <div>
+              <h4>Priya Rawat</h4>
+              <span>Verified Buyer · Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-animate="fade-up" style="--delay:0.3s">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ordered the Force Max for my gym sessions and daily commute. Super lightweight — feels like nothing is on my feet. The rubber sole grips every surface perfectly. COMFI is now my only shoe brand."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RS</div>
+            <div>
+              <h4>Rohan Sharma</h4>
+              <span>Verified Buyer · Bangalore</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-box" data-animate="fade-up">
+        <span class="section-badge">Stay in the Loop</span>
+        <h2 class="newsletter-title">Get <span class="accent">First Access</span><br />to New Drops</h2>
+        <p class="newsletter-sub">Be the first to know about exclusive launches, limited editions, and special offers. No spam, ever.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="input-group">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" id="emailInput" placeholder="Enter your email address..." required autocomplete="email" />
+            <button type="submit" class="btn btn-primary" id="subscribeBtn">Subscribe <i class="fas fa-paper-plane"></i></button>
+          </div>
+          <p class="newsletter-note"><i class="fas fa-lock"></i> 100% privacy guaranteed. Unsubscribe anytime.</p>
+        </form>
+        <div class="newsletter-success" id="newsletterSuccess">
+          <i class="fas fa-check-circle"></i> You're on the list! Expect something bold in your inbox.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">COMFI<span>.</span></a>
+          <p>Walk Bold. Walk Comfi.<br />Premium shoes for the modern generation.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram" id="socialInsta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X" id="socialTwitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook" id="socialFb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube" id="socialYt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#why-us">Why COMFI</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> 42, Street Lane, Mumbai, MH 400001</li>
+            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fas fa-envelope"></i> hello@comfishoes.in</li>
+            <li><i class="fas fa-clock"></i> Mon–Sat: 10 AM – 7 PM</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 COMFI Shoes. All rights reserved. Crafted with <i class="fas fa-heart"></i> in India.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
