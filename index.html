@@ -25,6 +25,7 @@
         <li><a href="#hero" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#why-us" class="nav-link">Why Us</a></li>
         <li><a href="#testimonials" class="nav-link">Reviews</a></li>
         <li><a href="#newsletter" class="nav-link">Contact</a></li>
@@ -64,7 +65,7 @@
     </div>
     <div class="hero-image-wrap" data-animate="fade-left">
       <div class="hero-glow"></div>
-      <img src="hero_sneaker.png" alt="Comfi Shoes Premium Sneaker" class="hero-shoe-img" id="heroShoe" />
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=90&auto=format&fit=crop" alt="Comfi Shoes Premium Sneaker" class="hero-shoe-img" id="heroShoe" />
     </div>
     <div class="hero-scroll-indicator">
       <span>Scroll</span>
@@ -122,7 +123,7 @@
         <!-- Product Card 1 -->
         <div class="product-card" data-animate="fade-up">
           <div class="product-img-wrap">
-            <img src="shoe_products.png" alt="Comfi X1 Pro" class="product-img" />
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=85&auto=format&fit=crop" alt="Comfi X1 Pro" class="product-img" />
             <div class="product-overlay">
               <button class="btn btn-primary btn-sm" id="buyX1">Quick Buy</button>
             </div>
@@ -141,7 +142,7 @@
         <!-- Product Card 2 -->
         <div class="product-card" data-animate="fade-up" style="--delay:0.15s">
           <div class="product-img-wrap">
-            <img src="shoe_products.png" alt="Comfi Shadow Elite" class="product-img" style="filter: invert(1) brightness(0.9);" />
+            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&q=85&auto=format&fit=crop" alt="Comfi Shadow Elite" class="product-img" />
             <div class="product-overlay">
               <button class="btn btn-primary btn-sm" id="buyShadow">Quick Buy</button>
             </div>
@@ -160,7 +161,7 @@
         <!-- Product Card 3 -->
         <div class="product-card" data-animate="fade-up" style="--delay:0.3s">
           <div class="product-img-wrap">
-            <img src="hero_sneaker.png" alt="Comfi Force Max" class="product-img" />
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=85&auto=format&fit=crop" alt="Comfi Force Max" class="product-img" />
             <div class="product-overlay">
               <button class="btn btn-primary btn-sm" id="buyForce">Quick Buy</button>
             </div>
@@ -178,7 +179,7 @@
         <!-- Product Card 4 -->
         <div class="product-card" data-animate="fade-up" style="--delay:0.1s">
           <div class="product-img-wrap">
-            <img src="shoe_products.png" alt="Comfi Void Runner" class="product-img" style="transform: scaleX(-1);" />
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&q=85&auto=format&fit=crop" alt="Comfi Void Runner" class="product-img" />
             <div class="product-overlay">
               <button class="btn btn-primary btn-sm" id="buyVoid">Quick Buy</button>
             </div>
@@ -197,7 +198,7 @@
         <!-- Product Card 5 -->
         <div class="product-card" data-animate="fade-up" style="--delay:0.25s">
           <div class="product-img-wrap">
-            <img src="hero_sneaker.png" alt="Comfi Stealth Low" class="product-img" style="filter:brightness(1.2);" />
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=85&auto=format&fit=crop" alt="Comfi Stealth Low" class="product-img" />
             <div class="product-overlay">
               <button class="btn btn-primary btn-sm" id="buyStealth">Quick Buy</button>
             </div>
@@ -215,7 +216,7 @@
         <!-- Product Card 6 -->
         <div class="product-card" data-animate="fade-up" style="--delay:0.4s">
           <div class="product-img-wrap">
-            <img src="shoe_products.png" alt="Comfi Phantom High" class="product-img" style="filter: contrast(1.2) brightness(0.85);" />
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961a32f?w=600&q=85&auto=format&fit=crop" alt="Comfi Phantom High" class="product-img" />
             <div class="product-overlay">
               <button class="btn btn-primary btn-sm" id="buyPhantom">Quick Buy</button>
             </div>
@@ -234,6 +235,78 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== COMMUNITY GALLERY ===================== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Community</span>
+        <h2 class="section-title">Show Off Your <span class="accent">Kicks</span></h2>
+        <p class="section-sub">Upload your COMFI shoe photos and join the movement. Drag, drop, or browse.</p>
+      </div>
+
+      <!-- Upload Area -->
+      <div class="gallery-upload-area" id="dropZone" data-animate="fade-up">
+        <input type="file" id="fileInput" accept="image/*" multiple hidden />
+        <div class="upload-icon-pulse">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </div>
+        <h3>Drag & Drop your photos here</h3>
+        <p class="upload-hint">Supports JPG, PNG, WEBP — max 10MB per image</p>
+        <button class="btn btn-outline" id="browseBtn" type="button"><i class="fas fa-folder-open"></i> Browse Files</button>
+        <div class="upload-options">
+          <label for="altTextInput"><i class="fas fa-tag"></i> Describe your photo (for SEO):</label>
+          <input type="text" id="altTextInput" placeholder="e.g. My new COMFI X1 Pro at the park" />
+        </div>
+        <!-- Upload Progress -->
+        <div class="upload-progress" id="uploadProgress">
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progressBarFill"></div>
+          </div>
+          <span class="progress-text" id="progressText">0%</span>
+        </div>
+      </div>
+
+      <!-- File Preview Strip (before submitting) -->
+      <div class="file-preview-strip" id="filePreviewStrip">
+        <!-- Preview thumbnails are injected here -->
+      </div>
+
+      <!-- Gallery Controls -->
+      <div class="gallery-controls" data-animate="fade-up">
+        <div class="gallery-count" id="galleryCount">0 images</div>
+        <div class="gallery-view-toggle">
+          <button class="view-btn active" id="viewGrid" title="Grid View"><i class="fas fa-th"></i></button>
+          <button class="view-btn" id="viewSlider" title="Slider View"><i class="fas fa-images"></i></button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Uploaded images will be injected here dynamically -->
+      </div>
+
+      <!-- Gallery Slider (hidden by default) -->
+      <div class="gallery-slider" id="gallerySlider" style="display:none;">
+        <button class="slider-arrow slider-prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-track" id="sliderTrack"></div>
+        <button class="slider-arrow slider-next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIGHTBOX MODAL ===================== -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
 
   <!-- ===================== WHY CHOOSE US ===================== -->
   <section class="why-us" id="why-us">
@@ -362,6 +435,7 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">Our Story</a></li>
             <li><a href="#products">Shop</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#why-us">Why COMFI</a></li>
             <li><a href="#testimonials">Reviews</a></li>
           </ul>
@@ -408,6 +482,26 @@
   <!-- Toast Notification -->
   <div class="toast" id="toast"></div>
 
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
   <script src="script.js"></script>
+
+  <!-- Landbot Livechat Widget -->
+  <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var initLandbot = setInterval(function () {
+        if (typeof Landbot !== 'undefined' && Landbot.Livechat) {
+          clearInterval(initLandbot);
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3416565-BYU7B0GCAMO8GK9S/index.json',
+          });
+        }
+      }, 300);
+    });
+  </script>
 </body>
 </html>
